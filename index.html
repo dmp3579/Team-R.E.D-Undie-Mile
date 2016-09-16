@@ -103,26 +103,30 @@
 					<form>
 						<fieldset>
 							<legend>Sign up to register</legend>
-							<div>
-								<label>Your Name</label>
-								<input type="text" class="form-control" placeholder="First name">
-								<input type="text" class="form-control" placeholder="Last name">
+							<div class="form-group">
+								<label class="sr-only" for="FirstName">First Name</label>
+								<input type="text" class="form-control" id="FirstName" placeholder="First Name">
 							</div>
-							<div> 
+							<div class="form-group">
+								<label class="sr-only" for="LastName">Last Name</label>
+								<input type="text" class="form-control" id="LastName" placeholder="Last Name">
+							</div>
+							<div class="form-group"> 
 								<label>Street Adress</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Street Address Line 2</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>City</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>State / Province</label>
-								<select>
+								<select class="form-control">
+									<option>-- Select --</option>
 									<option>AL</option>
 									<option>AK</option>
 									<option>AZ</option>
@@ -175,37 +179,38 @@
 									<option>WY</option>
 								</select>
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Postal / Zip Code</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Country</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Email</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
+							<div class="form-group">
 								<p>I understand I must be 18 years or older to participate in this event. By checking this box I certify that I am at least 18 years of age.  Yes, I am 18 years or older.</p>
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Enter Date of Birth</label>
 								<input type="text" class="form-control" placeholder="mm/dd/yyyy">
 							</div>
-							<div>
+							<div class="form-group">
 								<label>Your Initials:</label>
 								<input type="text" class="form-control">
 							</div>
-							<div>
-								<input type="radio">
+							<div class="form-group">
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
 								<label>I want to run in my undies! $25 Race entry fee will apply.</label> 
 							</div>
-							<div>
-								<input type="radio">
+							<div class="form-group">
+								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
 								<label>I do not want to run, but I would like to make a donation!</label>
-								<select>
+								<select class="form-control">
+									<option>-- Select --</option>
 									<option>$5</option>
 									<option>$10</option>
 									<option>$15</option>
@@ -213,8 +218,8 @@
 									<option>$25</option>
 								</select>
  							</div>
- 							<div>
-								<button>Submit</button>
+ 							<div class="form-group">
+								<button class="btn btn-default">Submit</button>
 							</div>
 						</fieldset>	
 					</form>				
@@ -236,22 +241,25 @@
 					<form>
 						<fieldset>
 							<legend>Sign up to volunteer</legend>
-								<div>
-									<label>Your Name</label>
-									<input type="text" class="form-control" placeholder="First name">
-									<input type="text" class="form-control" placeholder="Last name">
+							<div class="form-group">
+								<label class="sr-only" for="FirstName">First Name</label>
+								<input type="text" class="form-control" id="FirstName" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<label class="sr-only" for="LastName">Last Name</label>
+								<input type="text" class="form-control" id="LastName" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<label>Email</label>
+								<input type="text" class="form-control">
 								</div>
-								<div>
-									<label>Email</label>
-									<input type="text" class="form-control">
-								</div>
-								<div>
-									<label>Phone Number</label>
-									<input type="text" class="form-control" placeholder="123-456-7890">
-								</div>
-								<div>
-									<button>Submit</button>
-								</div>
+							<div class="form-group">
+								<label>Phone Number</label>
+								<input type="text" class="form-control" placeholder="123-456-7890">
+							</div>
+							<div class="form-group">
+								<button class="btn btn-default">Submit</button>
+							</div>
 						</fieldset>
 					</form>
 				</div>
