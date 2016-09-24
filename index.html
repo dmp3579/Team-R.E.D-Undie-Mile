@@ -100,30 +100,30 @@
 					<h2>REGISTER!</h2>
 				</div>
 				<div class="col-sm-9">
-					<form>
+					<form class="col-md-12">
 						<fieldset>
 							<legend>Sign up to register</legend>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label class="sr-only" for="FirstName">First Name</label>
 								<input type="text" class="form-control" id="FirstName" placeholder="First Name">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label class="sr-only" for="LastName">Last Name</label>
 								<input type="text" class="form-control" id="LastName" placeholder="Last Name">
 							</div>
-							<div class="form-group"> 
+							<div class="form-group col-md-12"> 
 								<label>Street Adress</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-12">
 								<label>Street Address Line 2</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>City</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>State / Province</label>
 								<select class="form-control">
 									<option>-- Select --</option>
@@ -179,47 +179,57 @@
 									<option>WY</option>
 								</select>
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Postal / Zip Code</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Country</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-12">
 								<label>Email</label>
 								<input type="text" class="form-control">
 							</div>
-							<div class="form-group">
-								<p>I understand I must be 18 years or older to participate in this event. By checking this box I certify that I am at least 18 years of age.  Yes, I am 18 years or older.</p>
+							<div class="form-group col-md-12">
+								<label>
+								<input type="checkbox" name="ofAge" id="optionsRadios1" value="agree">
+								I understand I must be 18 years or older to participate in this event. By checking this box I certify that I am at least 18 years of age.  Yes, I am 18 years or older.</label>
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Enter Date of Birth</label>
 								<input type="text" class="form-control" placeholder="mm/dd/yyyy">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Your Initials:</label>
 								<input type="text" class="form-control">
 							</div>
 							<div class="form-group">
-								<input type="radio" name="optionsRadios" id="optionsRadios1" value="option1">
+								<div class="col-md-12">
+								<input type="radio" name="optionsRadios" id="optionsRadios1" value="willRun">
 								<label>I want to run in my undies! $25 Race entry fee will apply.</label> 
+								</div>
 							</div>
 							<div class="form-group">
-								<input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-								<label>I do not want to run, but I would like to make a donation!</label>
-								<select class="form-control">
-									<option>-- Select --</option>
-									<option>$5</option>
-									<option>$10</option>
-									<option>$15</option>
-									<option>$20</option>
-									<option>$25</option>
-								</select>
+								<div class="col-md-12">
+									<input type="radio" name="optionsRadios" id="optionsRadios2" value="willDonate">
+									<label>I do not want to run, but I would like to make a donation!</label>
+								</div>
+								<div class="form-group col-md-3">
+									<select class="form-control">
+										<option> -- Select -- </option>
+										<option>$5</option>
+										<option>$10</option>
+										<option>$15</option>
+										<option>$20</option>
+										<option>$25</option>
+									</select>
+								</div>
  							</div>
  							<div class="form-group">
+ 								<div class="col-md-12">
 								<button class="btn btn-default">Submit</button>
+								</div>
 							</div>
 						</fieldset>	
 					</form>				
@@ -234,30 +244,30 @@
 					<h2>VOLUNTEER!</h2>
 				</div>
 				<div class="col-sm-9">
-					<p>Whether you're interested in working packet pick-up, helping decorate the venue or working the course on race day, there are a variety of volunteer spots where we can use your help!</p>
-
-					<p>Sign up on the form below and someone from the  team will be in touch shortly!
+					<p class="col-md-12">Whether you're interested in working packet pick-up, helping decorate the venue or working the course on race day, there are a variety of volunteer spots where we can use your help!</p>
+					<p class="col-md-12">
+					Fill out the form below and someone from the  team will be in touch shortly!
 					</p>
-					<form>
+					<form class="col-md-12">
 						<fieldset>
 							<legend>Sign up to volunteer</legend>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label class="sr-only" for="FirstName">First Name</label>
 								<input type="text" class="form-control" id="FirstName" placeholder="First Name">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label class="sr-only" for="LastName">Last Name</label>
 								<input type="text" class="form-control" id="LastName" placeholder="Last Name">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Email</label>
 								<input type="text" class="form-control">
 								</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<label>Phone Number</label>
 								<input type="text" class="form-control" placeholder="123-456-7890">
 							</div>
-							<div class="form-group">
+							<div class="form-group col-md-6">
 								<button class="btn btn-default">Submit</button>
 							</div>
 						</fieldset>
