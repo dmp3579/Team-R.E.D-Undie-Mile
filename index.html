@@ -88,7 +88,30 @@
 				</div>
 				<div class="col-sm-9">
 					<p>The Bears Den is located at 845 High Point Place NE, Byron MN.</p>
-					<img src="http://placehold.it/400x400">
+					<div id="map" style="width:100%;height:400px">
+						<script>
+							function myMap() {
+							  var location = new google.maps.LatLng(44.030551,-92.632478);
+							  var mapCanvas = document.getElementById("map");
+							  var mapOptions = {
+							    center: new google.maps.LatLng(44.030551,-92.632478),
+							    zoom: 16
+							  };
+							var map = new google.maps.Map(mapCanvas, mapOptions);
+						  	var marker = new google.maps.Marker({
+						  		position:location,
+						  		animation:google.maps.Animation.BOUNCE});
+						  	
+						  	marker.setMap(map);
+
+						  	var infowindow = new google.maps.InfoWindow({
+						    content: "The race starts here!"
+						  	});
+						  	infowindow.open(map,marker);
+							}
+						</script>
+
+					</div>
 				</div>
 			</div>
 		</div>
@@ -290,5 +313,5 @@
 			</div>
 		</div>
 	</section>
-
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 </body>
