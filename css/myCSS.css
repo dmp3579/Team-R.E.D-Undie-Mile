@@ -1,6 +1,11 @@
-h1 {font-family: 'Bungee Shade', cursive;}
+body {background-color: #FCD9E5;}
 
-h2 {font-family: 'Bungee', cursive;}
+h1 {
+	font-family: 'Bungee Shade', cursive;}
+
+h2 {
+	color: #F1396D;
+	font-family: 'Bungee', cursive;}
 
 p {
 	font-size: 1.125em;
@@ -11,3 +16,7 @@ fieldset {margin-top: 20px;}
 .ribbon {
 	font-size: 2em;
 	font-family: 'Jura', sans-serif;}
+
+footer {background-color: #F1396D;}
+
+.footer-text {color: #ffffff;}
