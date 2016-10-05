@@ -1,7 +1,11 @@
 body {background-color: #FCD9E5;}
 
 h1 {
-	font-family: 'Bungee Shade', cursive;}
+	font-family: 'Bungee Shade', cursive;
+	font-size: 5em;
+	background-color: yellow;
+	margin-top: 1.5em;
+	width: 70%;}
 
 h2 {
 	color: #F1396D;
@@ -20,3 +24,6 @@ fieldset {margin-top: 20px;}
 footer {background-color: #F1396D;}
 
 .footer-text {color: #ffffff;}
+
+.header-image {background-image: url(../images/Undies.svg);
+	height: 400px;}
