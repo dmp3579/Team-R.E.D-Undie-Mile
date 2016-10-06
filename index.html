@@ -38,16 +38,20 @@
 			        </div>
 			    </div>
 			</nav>
-		</div>
-	</header>
-	<div class="container-fluid header-image">
-		<div class="row">
-			<div>
-			<h1 class="text-center">Run. Eat. Drink. 
-				<br>Support Pink!</h1>
+			<div class="container-fluid header-image">
+				<div class="container">
+					<div class="header-text">
+						<div >
+							<h1>Team R.E.D 
+							<br>Undie Mile</h1>
+							<h2>Run. Eat. Drink. Support Pink!</h2>
+							<button class="btn btn-default">Register Now</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</header>
 	<div class="container">
 		<div class="row">
 			<p class="lead text-center ribbon">Dec 4th at 6:30pm, $25 to enter!</p>
@@ -57,67 +61,24 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<h2>WHAT?</h2>
+					<h2>ABOUT THE UNDIE RUN</h2>
 				</div>
 				<div class="col-sm-9">
-					<p>Team R.E.D. is excited to host our 2nd Annual Underwear One-Mile at the Bears Den in Byron on Dec 4th at 6:30pm.</p>				
+					<p>Team R.E.D. is excited to host our 2nd Annual Underwear One-Mile at the Bears Den in Byron on Dec 4th at 6:30pm.</p>
+					<p>Yes! You have fun while running 1-mile in your undies outside in December in Minnesota! All the while, helping a great cause! Proceeds go to Join the Journey and their mission of Supporting Individuals on their Breast Cancer Journey.</p>				
 				</div>
 			</div>
-		</div>
-	</section>
-	<section>	
-		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
-					<h2>WHY?</h2>
+					<h2>THE AFTER PARTY</h2>
 				</div>
 				<div class="col-sm-9">
-					<p>Yes! You have fun while running 1-mile in your undies outside in December in Minnesota! All the while, helping a great cause! Proceeds go to Join the Journey and their mission of Supporting Individuals on their Breast Cancer Journey. 
-					<br>
-					Join us at the Bears Den for a post race celebration and a chance to win some great door prizes!
-					<br>
-					A unique race day give-away is available for the first 50 registrants only.</p>				
+					<p>Join us at the Bears Den for a post race celebration and a chance to win some great door prizes! A unique race day give-away is available for the first 50 registrants only.</p>				
 				</div>
 			</div>
 		</div>
 	</section>
-	<section>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-3">
-					<h2>Getting There</h2>
-				</div>
-				<div class="col-sm-9">
-					<p>The Bears Den is located at 845 High Point Place NE, Byron MN.</p>
-					<div id="map" style="width:100%;height:400px">
-						<script>
-							function myMap() {
-							  var location = new google.maps.LatLng(44.030551,-92.632478);
-							  var mapCanvas = document.getElementById("map");
-							  var mapOptions = {
-							    center: new google.maps.LatLng(44.030551,-92.632478),
-							    zoom: 16
-							  };
-							var map = new google.maps.Map(mapCanvas, mapOptions);
-						  	var marker = new google.maps.Marker({
-						  		position:location,
-						  		animation:google.maps.Animation.BOUNCE});
-						  	
-						  	marker.setMap(map);
-
-						  	var infowindow = new google.maps.InfoWindow({
-						    content: "The race starts here!"
-						  	});
-						  	infowindow.open(map,marker);
-							}
-						</script>
-
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section>	
+	<section style="background-color:#fcbcd6;">	
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -294,6 +255,42 @@
 							</div>
 						</fieldset>
 					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section style="background-color:#fcbcd6;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<h2>Getting There</h2>
+				</div>
+				<div class="col-sm-9">
+					<p>The Bears Den is located at 845 High Point Place NE, Byron MN.</p>
+					<div id="map" style="width:100%;height:400px">
+						<script>
+							function myMap() {
+							  var location = new google.maps.LatLng(44.030551,-92.632478);
+							  var mapCanvas = document.getElementById("map");
+							  var mapOptions = {
+							    center: new google.maps.LatLng(44.030551,-92.632478),
+							    zoom: 16
+							  };
+							var map = new google.maps.Map(mapCanvas, mapOptions);
+						  	var marker = new google.maps.Marker({
+						  		position:location,
+						  		animation:google.maps.Animation.BOUNCE});
+						  	
+						  	marker.setMap(map);
+
+						  	var infowindow = new google.maps.InfoWindow({
+						    content: "The race starts here!"
+						  	});
+						  	infowindow.open(map,marker);
+							}
+						</script>
+
+					</div>
 				</div>
 			</div>
 		</div>

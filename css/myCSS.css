@@ -2,10 +2,7 @@ body {background-color: #FCD9E5;}
 
 h1 {
 	font-family: 'Bungee Shade', cursive;
-	font-size: 5em;
-	background-color: yellow;
-	margin-top: 1.5em;
-	width: 70%;}
+	font-size: 5em;}
 
 h2 {
 	color: #F1396D;
@@ -27,3 +24,9 @@ footer {background-color: #F1396D;}
 
 .header-image {background-image: url(../images/Undies.svg);
 	height: 400px;}
+
+.header-text {
+	margin: auto; 
+	width: 60%;
+	text-align: center;
+	background-color: yellow;}
