@@ -1,5 +1,18 @@
 body {background-color: #FCD9E5;}
 
+.header-image {background-image: url(../images/Undies.svg);
+	height: 400px;}
+
+.header-text {
+	margin: auto; 
+	width: 60%;
+	text-align: center;
+	background-color: yellow;}
+
+.ribbon {
+	font-size: 2em;
+	font-family: 'Jura', sans-serif;}
+
 h1 {
 	font-family: 'Bungee Shade', cursive;
 	font-size: 5em;}
@@ -12,21 +25,67 @@ p {
 	font-size: 1.125em;
 	margin-top: 20px;}
 
+section {padding-bottom: 30px;}
+
+section:nth-of-type(2n+2){
+	background-color:#fcbcd6;}
+
 fieldset {margin-top: 20px;}
 
-.ribbon {
-	font-size: 2em;
-	font-family: 'Jura', sans-serif;}
+.form-styles {
+	padding-left: 0px !important;}
+
+.form-control{
+	border-radius: 0px;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 1px solid #F1396D;
+	border-bottom: 1px solid #F1396D; 
+}
+
+.control--radio {
+	border-radius: 50%;
+}
+
+.control__indicator {
+	position: absolute;
+	top: 2px;
+	left: 0px;
+	width: 20px;
+	height: 20px;
+	background: #ffffff;
+}
+
+.control {
+	position: relative;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	display: block;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control input:checked ~ .control__indicator {
+	background: #F1396D;
+}
+
+.btn {
+	border: 1px solid #F1396D;
+	color: #ffffff;
+	background-color: #F1396D;
+}
+
+.btn:hover {
+	border: 1px solid #F1396D;
+	background-color: yellow;
+	color: #F1396D;
+}
 
 footer {background-color: #F1396D;}
 
 .footer-text {color: #ffffff;}
-
-.header-image {background-image: url(../images/Undies.svg);
-	height: 400px;}
-
-.header-text {
-	margin: auto; 
-	width: 60%;
-	text-align: center;
-	background-color: yellow;}

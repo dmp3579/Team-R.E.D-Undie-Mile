@@ -45,7 +45,7 @@
 							<h1>Team R.E.D 
 							<br>Undie Mile</h1>
 							<h2>Run. Eat. Drink. Support Pink!</h2>
-							<button class="btn btn-default">Register Now</button>
+							<button class="btn btn-default btn-lg">Register Now</button>
 						</div>
 					</div>
 				</div>
@@ -64,8 +64,8 @@
 					<h2>ABOUT THE UNDIE RUN</h2>
 				</div>
 				<div class="col-sm-9">
-					<p>Team R.E.D. is excited to host our 2nd Annual Underwear One-Mile at the Bears Den in Byron on Dec 4th at 6:30pm.</p>
-					<p>Yes! You have fun while running 1-mile in your undies outside in December in Minnesota! All the while, helping a great cause! Proceeds go to Join the Journey and their mission of Supporting Individuals on their Breast Cancer Journey.</p>				
+					<p class="col-sm-12">Team R.E.D. is excited to host our 2nd Annual Underwear One-Mile at the Bears Den in Byron on Dec 4th at 6:30pm.</p>
+					<p class="col-sm-12">Yes! You have fun while running 1-mile in your undies outside in December in Minnesota! All the while, helping a great cause! Proceeds go to Join the Journey and their mission of Supporting Individuals on their Breast Cancer Journey.</p>				
 				</div>
 			</div>
 			<div class="row">
@@ -73,18 +73,18 @@
 					<h2>THE AFTER PARTY</h2>
 				</div>
 				<div class="col-sm-9">
-					<p>Join us at the Bears Den for a post race celebration and a chance to win some great door prizes! A unique race day give-away is available for the first 50 registrants only.</p>				
+					<p class="col-sm-12">Join us at the Bears Den for a post race celebration and a chance to win some great door prizes! A unique race day give-away is available for the first 50 registrants only.</p>				
 				</div>
 			</div>
 		</div>
 	</section>
-	<section style="background-color:#fcbcd6;">	
+	<section>	
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
 					<h2>Register Now</h2>
 				</div>
-				<div class="col-sm-9">
+				<div class="form-styles col-sm-9">
 					<form class="col-md-12">
 						<fieldset>
 							<div class="form-group col-md-6">
@@ -176,9 +176,11 @@
 								<input type="text" class="form-control">
 							</div>
 							<div class="form-group col-md-12">
-								<label>
-								<input type="checkbox" name="ofAge" id="optionsRadios1" value="agree">
-								I understand I must be 18 years or older to participate in this event. By checking this box I certify that I am at least 18 years of age.  Yes, I am 18 years or older.</label>
+								<label class="control">
+									<input type="checkbox" name="ofAge" id="optionsRadios1" value="agree">
+								By checking this box I certify that I am at least 18 years of age.
+								<div class="control__indicator"></div>
+								</label>
 							</div>
 							<div class="form-group col-md-6">
 								<label>Enter Date of Birth</label>
@@ -190,14 +192,18 @@
 							</div>
 							<div class="form-group">
 								<div class="col-md-12">
-								<input type="radio" name="optionsRadios" id="optionsRadios1" value="willRun">
-								<label>I want to run in my undies! $25 Race entry fee will apply.</label> 
+								<label class="control">I want to run in my undies! $25 Race entry fee will apply.
+									<input type="radio" name="optionsRadios" id="optionsRadios1" value="willRun">
+									<div class="control__indicator control--radio"></div>
+								</label> 
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-md-12">
+									<label class="control">I do not want to run, but I would like to make a donation!
 									<input type="radio" name="optionsRadios" id="optionsRadios2" value="willDonate">
-									<label>I do not want to run, but I would like to make a donation!</label>
+									<div class="control__indicator control--radio"></div>
+								</label>
 								</div>
 								<div class="form-group col-md-3">
 									<select class="form-control">
@@ -212,7 +218,7 @@
  							</div>
  							<div class="form-group">
  								<div class="col-md-12">
-								<button class="btn btn-default">Submit</button>
+								<button class="btn btn-default btn-lg">Submit</button>
 								</div>
 							</div>
 						</fieldset>	
@@ -228,11 +234,11 @@
 					<h2>Sign Up to Volunteer</h2>
 				</div>
 				<div class="col-sm-9">
-					<p class="col-md-12">Whether you're interested in working packet pick-up, helping decorate the venue or working the course on race day, there are a variety of volunteer spots where we can use your help!</p>
-					<p class="col-md-12">
+					<p class="col-sm-12">Whether you're interested in working packet pick-up, helping decorate the venue or working the course on race day, there are a variety of volunteer spots where we can use your help!</p>
+					<p class="col-sm-12">
 					Fill out the form below and someone from the  team will be in touch shortly!
 					</p>
-					<form class="col-md-12">
+					<form class="form-styles col-md-12">
 						<fieldset>
 							<div class="form-group col-md-6">
 								<label class="sr-only" for="FirstName">First Name</label>
@@ -251,7 +257,7 @@
 								<input type="text" class="form-control" placeholder="123-456-7890">
 							</div>
 							<div class="form-group col-md-6">
-								<button class="btn btn-default">Submit</button>
+								<button class="btn btn-default btn-lg">Submit</button>
 							</div>
 						</fieldset>
 					</form>
@@ -259,37 +265,38 @@
 			</div>
 		</div>
 	</section>
-	<section style="background-color:#fcbcd6;">
+	<section>
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
 					<h2>Getting There</h2>
 				</div>
 				<div class="col-sm-9">
+					<div class="col-sm-12">
 					<p>The Bears Den is located at 845 High Point Place NE, Byron MN.</p>
-					<div id="map" style="width:100%;height:400px">
-						<script>
-							function myMap() {
-							  var location = new google.maps.LatLng(44.030551,-92.632478);
-							  var mapCanvas = document.getElementById("map");
-							  var mapOptions = {
-							    center: new google.maps.LatLng(44.030551,-92.632478),
-							    zoom: 16
-							  };
-							var map = new google.maps.Map(mapCanvas, mapOptions);
-						  	var marker = new google.maps.Marker({
-						  		position:location,
-						  		animation:google.maps.Animation.BOUNCE});
-						  	
-						  	marker.setMap(map);
+						<div id="map" style="width:100%;height:400px;border:1px solid #F1396D">
+							<script>
+								function myMap() {
+								  var location = new google.maps.LatLng(44.030551,-92.632478);
+								  var mapCanvas = document.getElementById("map");
+								  var mapOptions = {
+								    center: new google.maps.LatLng(44.030551,-92.632478),
+								    zoom: 16
+								  };
+								var map = new google.maps.Map(mapCanvas, mapOptions);
+							  	var marker = new google.maps.Marker({
+							  		position:location,
+							  		animation:google.maps.Animation.BOUNCE});
+							  	
+							  	marker.setMap(map);
 
-						  	var infowindow = new google.maps.InfoWindow({
-						    content: "The race starts here!"
-						  	});
-						  	infowindow.open(map,marker);
-							}
-						</script>
-
+							  	var infowindow = new google.maps.InfoWindow({
+							    content: "The race starts here!"
+							  	});
+							  	infowindow.open(map,marker);
+								}
+							</script>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -303,9 +310,9 @@
 						<br>Team R.E.D</h2>
 				</div>
 				<div class="col-sm-9 footer-text">
-					<p>Team R.E.D. is a club dedicated to having fun while staying fit! We say: Run. Eat. Drink. Two Out Of Three Ain't Bad! We meet twice a month at the Bears Den in Byron for a walk or run, and twice a month at a rotating location. We offer various routes each time, with distances suitable for walkers and runners. We have members of all paces.. all are welcome!</p>
+					<p class="col-sm-12">Team R.E.D. is a club dedicated to having fun while staying fit! We say: Run. Eat. Drink. Two Out Of Three Ain't Bad! We meet twice a month at the Bears Den in Byron for a walk or run, and twice a month at a rotating location. We offer various routes each time, with distances suitable for walkers and runners. We have members of all paces.. all are welcome!</p>
 					<br>
-					<p>For more information, please email us at byron.teamred@gmail.com</p>				
+					<p class="col-sm-12">For more information, please email us at byron.teamred@gmail.com</p>				
 				</div>
 			</div>
 		</div>
