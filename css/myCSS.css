@@ -1,4 +1,6 @@
-body {background-color: #FCD9E5;}
+body {
+	background-color: #FCD9E5;
+	position: relative;}
 
 .navbar-toggle{background-color: #F1396D;}
 
@@ -125,7 +127,7 @@ fieldset {margin-top: 20px;}
 	background-color: #F1396D;
 }
 
-.btn:hover {
+.btn:hover, .btn:active {
 	border: 1px solid #F1396D;
 	background-color: #E5F04C;
 	color: #F1396D;

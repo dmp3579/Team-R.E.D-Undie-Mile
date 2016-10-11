@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/myCSS.css">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-example">
 	<header>
 		<div>
 			<nav class="navbar" role="navigation">
@@ -28,7 +28,7 @@
 			        </div>
 
 			        <!-- Collect the nav links, forms, and other content for toggling -->
-			        <div class="collapse navbar-collapse" id="navbar">
+			        <div class="collapse navbar-collapse" id="navbar-example">
 			            <ul class="nav nav-pills">
 			                <li><a href="#AboutRun">About Team R.E.D Undie Run</a></li>
 			                <li><a href="#Register">Register</a></li>
@@ -46,7 +46,8 @@
 								<h1>Team R.E.D 
 								<br>Undie Mile</h1>
 								<h2>Run. Eat. Drink. Support Pink!</h2>
-								<button class="btn btn-default btn-lg">Register Now</button>
+								<a href="#Register">
+									<button class="btn btn-default btn-lg">Register Now</button></a>
 							</div>
 						</div>
 					</div>
@@ -61,7 +62,7 @@
 			</div>
 		</div>
 	</div>
-	<section>
+	<section id="AboutRun">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -82,7 +83,7 @@
 			</div>
 		</div>
 	</section>
-	<section>	
+	<section id="Register">	
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -231,7 +232,7 @@
 			</div>
 		</div>
 	</section>
-	<section>
+	<section id="Volunteer">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -306,7 +307,7 @@
 			</div>
 		</div>
 	</section>
-	<footer>
+	<footer id="AboutTeamRED">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3">
@@ -326,4 +327,7 @@
 		</div>
 	</footer>
 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	<script type="text/javascript">
+		$('body').scrollspy({ target: '#navbar-example' })
+	</script>
 </body>
