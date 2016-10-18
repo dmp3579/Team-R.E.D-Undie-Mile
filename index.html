@@ -348,8 +348,8 @@
       var marker = new google.maps.Marker({
     	position: myLatLng,
     	map: map,
-    	title: 'Hello World!'
   });
+      marker.setAnimation(google.maps.Animation.BOUNCE);
       }
     </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7aIilLuRPPSQ9uSmsTMgk8FH5LxjpUYk&callback=initMap"
