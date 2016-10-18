@@ -348,12 +348,12 @@
       var marker = new google.maps.Marker({
     	position: myLatLng,
     	map: map,
-  });
+ 		});
       marker.setAnimation(google.maps.Animation.BOUNCE);
-      /* var infowindow = new google.maps.InfoWindow({
-          content: "The race starts here!",
+      var infowindow = new google.maps.InfoWindow({
+          content: 'The race starts here!'
         });
-      infowindow.open(map,marker); */
+      infowindow.open(map,marker);
       }
     </script>
    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7aIilLuRPPSQ9uSmsTMgk8FH5LxjpUYk&callback=initMap"
